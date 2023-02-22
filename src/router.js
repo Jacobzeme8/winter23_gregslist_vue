@@ -37,7 +37,17 @@ const routes = [
     name: 'Account',
     component: loadPage('AccountPage'),
     beforeEnter: authGuard
-  }
+  },
+  {
+    path: '/jobs',
+    name: 'Jobs',
+    component: loadPage('JobsPage')
+  },
+  {
+    path: '/houses/:houseId',
+    name: 'House',
+    component: loadPage('HousePage')
+  },
 ]
 
 export const router = createRouter({
